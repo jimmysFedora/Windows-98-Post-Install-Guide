@@ -1,51 +1,146 @@
-# Windows 98SE Post Install Guide
-My personal list of what to after installing Windows 98 Second Edition for gaming and more or less serves as a checklist for my self.
+# Windows 98 Second Edition Install Guide
+My personal list of what I do when installing Windows 98 Second Edition for gaming and more or less serves as a checklist for my self.
+I am converting this document to Github, so some of the information in this doesn't even make sense but I am working on making it more broad for the average user.
+https://docs.google.com/document/d/1Ld9op4EJxa9T_4hsOP_6uJFgPSqTqbbgTPbfB3cTAbc/edit?usp=sharing
 
 # Hardware tips and requirements:
-- If you are unable to run at full CPU clock speed install Windows 9x without ACPI by forcing APM mode via ```setup.exe /p i```
-- KEEP PARTITION SIZE TOTAL UNDER WHAT OS CAN SUPPORT
-- WINDOWS 95 OSR 2.5, 98 & ME ONLY SUPPORTS UP TO 137GB HDD
-- Booting into other drives with operating systems
-  - BIOS → IDE HDD AUTO DETECTION → UNUSED DRIVES --> NOT INSTALLED
-- ADJUST BIOS SETTINGS BEFORE INSTALLING WINDOWS
-- IF HAVING ERRORS WITH BOOTING FLOPPY OR CD MEDIA 
-- RESET BIOS SETTINGS
-- SOME WINDOWS GAMES USE WDM DRIVERS INSTEAD OF VXD DRIVERS
-- FOR BURNING DISKS MAKE SURE BURN SPEED IS 10X IN ISO 9660 FILE SYSTEM
-- IF USING EZ DRIVE CREATE FAT32 PARTITION, BEFORE CREATING NTFS PARTITION. IF DUAL BOOTING SYSTEMS LIKE WINDOWS ME AND WINDOWS XP, MAKE SURE FAT32 PARTITION SMALLER THAN WINDOWS XP
+- If you are experiencing hardware instabilities such as being unable to run at full CPU clock speed. Install Windows 9x without ACPI by forcing APM mode with ```setup.exe /p i```
+
+- Tweak BIOS settings to your liking before installing Windows.
+
+- If sound doesn't work in some games it can be because some Windows games use WDM drivers instead of VXD drivers.
+
+- If you are having errors booting into floppy and CD media, reset the BIOS settings.
+
+- Keep partition size under what OS and hardware can support.
+  - It is recommended to have a 32GB partition but Windows 95 OSR 2.5, 98 & ME supports up to 137GB partitions without installing LBA48 patch.
+
+- Instead of messing with configuring boot loader for dual booting have operating systems on their own seperate drive and boot into them by marking unused drives to not installed.
+  - BIOS → IDE HDD AUTO-DETECTION → UNUSED DRIVES --> NOT INSTALLED
+
+# Recommended BIOS Settings:
+- LOAD SETUP DEFAULTS - LOADS PERFORMANCE SETTINGS
+- LOAD BIOS DEFAULTS - ONLY FOR TROUBLESHOOTING
+- ADJUST TIME
+- BOOT ORDER - AS NECESSARY
+- USB KB/MOUSE LEGACY - KEYB + MOUSE (IF USING ONE)
+- PNP AWARE OS - ON
+- PRIMARY GRAPHICS ADAPTER - AGP
+- COMPLIANCE WITH O/S - NO (I TURN THIS OFF JUST IN CASE TO FORCE APM INSTALL)
+- UNUSED PORTS (SERIAL, PARALLEL, ETHERNET, etc) - DISABLED
+- ONBOARD AC’97, LEGACY AUDIO & SOUND BLASTER - DISABLED (IF YOU HAVE ANOTHER SOUND CARD YOU'RE USING)
+- FSB SPEED - (ADJUST AS NECESSARY) - For me I have a Pentium III 1000Mhz and it runs great at a FSB of 133Mhz.
+- VOLTAGE - (ADJUST AS NECESSARY) - For me it is 1.7v which is the lowest I can go and I have no issues.
+- IDE HDD AUTO DETECTION - PRESSED (TO REFRESH DRIVES)
+
+# Pre-Installation Procedures:
+- Make sure hard drive isn't slave to CD-ROM
+- I use SeaTools and WD EZ-Drive to format the partitions instead of using ```fdisk``` for quicker formats. By not using fdisk, you don't get sector checks like you would when creating and formating partitions in fdisk.
+- If installing on a Seagate hard drive
+  - SEATOOLS FOR DOS DISK HAS OPTION TO RESET DISK SIZE TO MAX OR CUSTOM SIZES SUCH AS 32GB.
+  - THEN USE BLUE SEAGATE CD WITH DISCWIZARD TO WIPE THE DRIVE
+- If installing on a Western Digital hard drive
+  - Insert EZ-Drive floppy disk
+    - If there are boot floppy errors, reset the BIOS settings and set it to the lowest processor speed and physically disconnect other drives.
+
+# Standard Installation Procedures:
+- Boot with Windows 98 Second Edition Boot Disk
+- Start computer with CD-ROM support
+- Make directory on C: drive with “md win98”
+- Go to CD-ROM and ```cd``` into win98 folder
+- Run ```copy *.* C:\win98``` (copies installation files to hard drive directly and Windows won't nag you to insert disk when updating drivers)
+- Go to C drive and run ```setup.exe /p i``` ("/p i" parameters force a APM install instead of ACPI)
 
 # Post install housekeeping
-- Add or remove Windows features if not done already
+- Add or remove Windows features, if not done already during installation process.
+
 - Install hardware drivers
+
 - Verify DMA Mode is turned on for HDD & CD-ROM in Device Manager
   - If unstable disable DMA mode  
+
 - Configure sound mixer settings
-- Set sound output for devices in multimedia to have the highest sample rate conversion
-SET PERFORMANCE TAB → FILE SYSTEM → NETWORK SERVE
-Defrag IDE HDDs with 
+
+- Set sound output for devices in multimedia to have the highest sample rate conversion quality
+
+- Set file system in Settings → System → Performance → File System → Network Server 
+
 - Remove network login prompt by going to ```Settings → Network → Primary Network Logon → Windows Logon```
-- Due to lack of memory optimizations on the 9x kernel it is recommended that after finishing a game restart the computer and then load up the next application.
+  - If you didn't have a Windows password, it should boot into the desktop directly 
 
-# JOHNNY 5 HDD CONFIGURATION:
+- Due to lack of memory optimizations on the 9x kernel, it is recommended that after finishing a game, restart the computer and then load up the next application.
+
+# Recommended Software
+- DAMEON Tools - https://www.philscomputerlab.com/daemon-tools-windows-98.html
+  - An essential image mounter that works on 95/98/ME 
+- Windows Installer 2.0 - https://archive.org/details/instmsi   
+  - Needed for some programs such as DAEMON Tools.
+- Diskeeper 6.0 - https://winworldpc.com/product/diskeeper/60
+  - My perferred defragmentation tool, which works more efficiently than the system default ```DEFRAG.EXE```
+- Norton Ghost 2003 - https://archive.org/details/norton_ghost_2003/
+  - An handy tool to restore a system from a image file, so you don't have to spend hours reinstalling Windows, if you screw something up.
+- WinImage - https://winworldpc.com/product/winimage/61
+  - A must have piece of software, if working with floppy disks. Can read, write, and format and verify floppy diskettes.
+- 3DMark - https://www.philscomputerlab.com/futuremark-3dmark.html
+  - System benchmark software that outputs a score determining the performance of your system relative to the software being run.
+
+# Recommended 9x Updates
+- Windows Security Update CD circa 2004 - https://archive.org/details/SecurityCD_2004
+  - The most painless and offical way to get your system updated, if you don't want to use unoffical service packs. Microsoft only ever included security patches, Internet Explorer 6, and Windows Media Player 9 within the update CD, so hardware updates are excluded for stability reasons.
+   
+# Basic CLI Commands: 
+- ```cd\``` - Goes back to previous directory.
+- ```dir /p``` - Loads all the files one screenful at a time.
+- ```dir /w``` - Loads information widefully.
+- ```copy *.* c:\``` - Common way to copy files. 
+- ```format a: /u``` - Low level format floppy diskettes.
+- ```format c: /q /u /s``` - Use this command if you cannot format drive after using fdisk on it. Go to the CD-ROM, cd into win98 folder, and run the command.
+- Video tutorial to reset HDD to factory settings: https://www.youtube.com/watch?v=rGSjWwTy1Rg
+
+# Windows 9x Tips:
+- If having issues with USB drives, try formatting within Windows 9x.
+- Connect to FTP server if you have one by running ```ftp://192.168.0.x```
+- If burning disks make sure burn speed is slow like 10X and verifying the content is burnt in ISO 9660 file system.
+- Installing the DirectX version your graphics card supports is recommended, but you may want to stick to installing DirectX 7.0a for more period correct games.
+- If dual booting XP and using EZ-Drive make sure FAT32 partition for 98 is smaller than the NTFS partition for XP.
+
+# My current hard drive setup:
 - Windows 95
-  - 120GB ACTUAL HDD SIZE
-  - 137GB HARDWARE HDD LIMIT
-  - 137GB PARTITION
+  - 120GB Actual HDD Size
+  - 137GB Hardware HDD Limit
+  - 137GB Partition
 - Windows 98 SE
-  - 160GB ACTUAL HDD SIZE
-  - 137GB HARDWARE HDD LIMIT 
-  - 137GB PARTITION
+  - 160GB Actual HDD Size
+  - 137GB Hardware HDD Limit 
+  - 137GB Partition
 - Windows ME
-  - 320GB ACTUAL HDD SIZE
-  - 137 HARDWARE HDD LIMIT
-  - 137GB PARTITION		
+  - 320GB Actual HDD Size
+  - 137GB Hardware HDD Limit
+  - 137GB Partition
+	
+# Other handy retro resources
 
-# DOSBOX TIPS: 
-FOR DIRECTORY - MOUNT C (PATH OF DIRECTORY)
-FOR CD DRIVE MOUNT (DRIVE LETTER) (LETTER OF ACTUAL CD-ROM) -T CDROM
-FOR ISO - IMGMOUNT “DRIVE LETTER” “PATH TO ISO.ISO” -T ISO
-FOR CUE/BIN FILES - IMGMOUNT (DRIVE LETTER) (PATH TO CUE) -T ISO
-I USED THE DOSBOX VERSION. I HAD TO CHANGE THE CONFIG FILE IN THE INSTALL FROM JOYSTICK=AUTO TO JOYSTICK=CH, AND SWAP34=TRUE THEN SET THE JOYSTICK IN MECHWARRIOR 2 TO THE CH JOYSTICK AND CALIBRATED IT.
+# Recommended websites and software
+- All legacy DirectX versions - http://falconfly.3dfx.pl/directx.htm
+  - A handy website to see what DirectX versions work on what operating systems. 
+- Legacy Update - https://legacyupdate.net/
+  - A must have if updating NT based systems from Windows 2000 and onwards, no more downloading patches from random websites or digging through the Microsft Update Catalog, since it revives the update manager within Windows to access the Windows Update Servers directly.
+- PhilsComputerLab - https://www.philscomputerlab.com/
+  - Has drivers, benchmark software, hardware write-ups.
+- Windows CD Emulator - https://wincdemu.sysprogs.org/download/
+  - A image mounter for systems running XP or later. Comes in a portable version if you don't like installing software.
+- 86Box - https://86box.net/
+  - My perferred fork of PCem to emulate entire machines.
+- ImgBurn - https://www.imgburn.com/
+  - A versitale image burner
+
+# DOSBox tips: 
+- Mounting directory - ```mount C (path of directory)```
+- Mounting CD drive ```mount (drive letter) (letter of CD-ROM) -t CDROM```
+- Mounting ISO - ```imgmount “drive letter” “path to iso.iso” -t iso```
+- Mounting CUE/BIN files - ```imgmount (drive letter) (path to cue.cue) -t iso```
+
+To use joystick in DOSBox configure the config file in the install by changing ```JOYSTICK=AUTO``` to ```JOYSTICK=CH```, and ```SWAP34=TRUE``` then set the joystick in the game to ```CH JOYSTICK```then calibrate.
 ```
 JOYSTICKTYPE=CH
 TIMED=TRUE
@@ -53,55 +148,3 @@ AUTOFIRE=FALSE
 SWAP34=TRUE
 BUTTONWRAP=FALSE
 ```
-
-# Basic CLI commands: 
-- ```cd\``` - Goes back to previous directory
-- ```dir /p``` - LOADS IN ALL THE FILES IN THE DIRECTORY IN CHUNKS
-- ```dir /w``` - LOADS INFORMATION IN WIDESCREEN
-- ```COPY *.* C:\WIN9X``` - MOST COMMON WAY TO COPY SETUP FILES TO HDD 
-- ```FORMAT A: /U``` - IF FLOPPY DISCS DON’T WORK TRY LOW LEVEL FORMAT - 
-- IF YOU CANNOT FORMAT DRIVE AFTER USING FDISK ON IT. GO TO THE CD-ROM AND CD INTO WIN98 FOLDER THEN RUN ```FORMAT C: /Q /U /S```
-
-Video tutorial to reset HDD to factory settings: https://www.youtube.com/watch?v=rGSjWwTy1Rg
-
-
-# WIN9X TIPS:
-Connect to ftp server by  RUN FTP://192.168.0.X/
-If having issues with usb drives try formatting within Windows 9x
-TRY TO INSTALL DIRECTX VERSION FOR GPU 
-
-# RECOMMENDED BIOS SETTINGS:
-```
-LOAD SETUP DEFAULTS - LOADS PERFORMANCE SETTINGS
-LOAD BIOS DEFAULTS - ONLY FOR TROUBLESHOOTING
-ADJUST TIME
-BOOT ORDER - AS NECESSARY
-USB KB/MOUSE LEGACY - KEYB + MOUSE
-PNP AWARE OS - ON
-PRIMARY GRAPHICS ADAPTER - AGP
-COMPLIANCE WITH O/S - NO
-UNUSED PORTS - DISABLED
-FDC - ENABLED
-ONBOARD AC’97 AUDIO - DISABLED
-ONBOARD LEGACY AUDIO - DISABLED
-SOUND BLASTER - DISABLED
-FSB SPEED - 133Mhz
-VOLTAGE - 1.7v
-IDE HDD AUTO DETECTION
-```
-
-STANDARD INSTALLATION PROCEDURE:
-IF INSTALLING ON SEAGATE HARD DRIVE
-SEATOOLS FOR DOS DISK HAS OPTION TO RESET DISK SIZE TO MAX OR CUSTOM SIZES SUCH AS 32GB.
-THEN USE BLUE SEAGATE CD WITH DISCWIZARD TO WIPE THE DRIVE
-IF INSTALLING ON WESTERN DIGITAL HARD DRIVE
-INSERT WD EZ-DRIVE FLOPPY
-IF THERE ARE BOOT FLOPPY ERRORS
-MAKE SURE BIOS SETTINGS ARE DEFAULT WITH LOWEST PROCESSOR SPEED AND OTHER DRIVES PHYSICALLY DISCONNECTED.
-INSTALLING WINDOWS 9X
-BOOT WITH WINDOWS 98 SECOND EDITION BOOT DISK
-SELECT START COMPUTER WITH CD-ROM SUPPORT
-MAKE DIRECTORY ON C: DRIVE WITH “MD WIN9X”
-GO TO CD DRIVE AND CD INTO WIN9X FOLDER
-ONCE IN WIN9X FOLDER TYPE “COPY *.* C:\WIN9X”
-GO TO C: AND RUN SETUP.EXE /P I
