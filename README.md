@@ -1,7 +1,7 @@
 # Windows-98-Post-Install-Guide
 My personal list of what to after installing Windows 98 Second Edition for gaming
 
-TIPS & REQUIREMENTS:
+# Hardware tips and requirements:
 TO RUN AT 1GHZ MAKE SURE YOU INSTALL WINDOWS 98SE & ME WITHOUT ACPI USING SETUP.EXE /P I
 KEEP PARTITION SIZE TOTAL UNDER WHAT OS CAN SUPPORT
 WINDOWS 95 OSR 2.5, 98 & ME ONLY SUPPORTS UP TO 137GB HDD
