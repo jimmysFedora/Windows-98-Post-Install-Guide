@@ -13,8 +13,8 @@ My personal list of what I do when installing Windows 98 Second Edition for gami
 - Keep partition size under what OS and hardware can support.
   - It is recommended to have a 32GB partition but Windows 95 OSR 2.5, 98 & ME supports up to 137GB partitions without installing LBA-48 patch.
 
-- Instead of messing with configuring boot loader for dual booting have operating systems on their own seperate drive and boot into them by marking unused drives to not installed.
-  - BIOS → IDE HDD AUTO-DETECTION → UNUSED DRIVES --> NOT INSTALLED
+- Instead of configuring boot loader for dual booting have operating systems on their own seperate drive and boot into them by marking unused drives to not installed.
+  - BIOS → IDE HDD AUTO-DETECTION → UNUSED DRIVES → NOT INSTALLED
 
 # My system for reference
 - MSI-MS 6309, Pentium 3 1000Mhz, 512MB RAM, ATI Radeon 8500DV, Crystal CX4235
@@ -131,7 +131,7 @@ My personal list of what I do when installing Windows 98 Second Edition for gami
 
 # DOSBox tips: 
 - Mounting directory - ```mount C (path of directory)```
-- Mounting CD drive ```mount (drive letter) (letter of CD-ROM) -t CDROM```
+- Mounting CD drive - ```mount (drive letter) (letter of CD-ROM) -t CDROM```
 - Mounting ISO - ```imgmount “drive letter” “path to iso.iso” -t iso```
 - Mounting CUE/BIN files - ```imgmount (drive letter) (path to cue.cue) -t iso```
 
