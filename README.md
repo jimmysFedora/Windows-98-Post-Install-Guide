@@ -49,7 +49,7 @@ My personal list of what I do when installing Windows 98 Second Edition for gami
 # Basic CLI Commands: 
 - ```cd``` - Change directory.
 - ```cd\``` - Goes back to previous directory.
-- ```dir```` - Shows every file in the directory.
+- ```dir``` - Shows every file in the directory.
 - ```dir /p``` - Loads all the files one screenful at a time.
 - ```dir /w``` - Loads information widefully.
 - ```copy *.* c:\``` - Common way to copy files. 
