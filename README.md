@@ -65,8 +65,6 @@ My personal list of what I do when installing Windows 98 Second Edition for gami
 # Post install housekeeping
 - Add or remove Windows features, if not done already during installation process.
 
-- Install hardware drivers
-
 - Verify DMA Mode is turned on for HDD & CD-ROM in Device Manager
   - If unstable disable DMA mode  
 
@@ -77,10 +75,8 @@ My personal list of what I do when installing Windows 98 Second Edition for gami
 - Set file system in Settings → System → Performance → File System → Network Server 
 
 - Remove network login prompt by going to ```Settings → Network → Primary Network Logon → Windows Logon```
-  - If you didn't have a Windows password, it should boot into the desktop directly 
-
-- Due to lack of memory optimizations on the 9x kernel, it is recommended that after finishing a game, restart the computer and then load up the next application.
-
+  - If you didn't have a Windows password, it should boot into the desktop directly
+  
 # Optional but Recommended 9x Updates
 - Windows Security Update CD circa 2004 - https://archive.org/details/SecurityCD_2004
   - The most painless and offical way to get your system updated, if you don't want to use unoffical service packs. Microsoft only ever included security patches, Internet Explorer 6, and Windows Media Player 9 within the update CD, so hardware updates are excluded for stability reasons.
@@ -89,44 +85,26 @@ My personal list of what I do when installing Windows 98 Second Edition for gami
 
 # Windows 9x Tips:
 - If having issues with USB drives, try formatting within Windows 9x.
-- Connect to FTP server if you have one by running ```ftp://192.168.0.x```
 - If burning disks make sure burn speed is slow like 10X and verifying the content is burnt in ISO 9660 file system.
 - Installing the DirectX version your graphics card supports is recommended, but you may want to stick to installing DirectX 7.0a for more period correct games.
 - If dual booting XP and using EZ-Drive make sure FAT32 partition for 98 is smaller than the NTFS partition for XP.
 
-# Recommended Software
+# Recommended Software & Websites
 - **3DMark** - https://www.philscomputerlab.com/futuremark-3dmark.html
-  - System benchmark software that outputs a score determining the performance of your system relative to the software being run.
+- **86Box** - https://86box.net/
 - **DAMEON Tools** - https://www.philscomputerlab.com/daemon-tools-windows-98.html
-  - An essential image mounter that works on 95/98/ME 
 - **Diskeeper 6.0** - https://winworldpc.com/product/diskeeper/60
-  - My perferred defragmentation tool, which works more efficiently than the system default ```DEFRAG.EXE```
 - **Microsoft Plus!** - https://winworldpc.com/product/plus/1998
-  - Contains desktop themes, screen savers, sound effects, power-toys, and other assorted goodies for the home user.
 - **Norton Ghost 2003** - https://archive.org/details/norton_ghost_2003/
-  - An handy tool to restore a system from a image file, so you don't have to spend hours reinstalling Windows, if you screw something up.
 - **Windows Installer 2.0** - https://archive.org/details/instmsi   
-  - Needed for some programs such as DAEMON Tools.
 - **WinImage** - https://winworldpc.com/product/winimage/61
-  - A must have piece of software, if working with floppy disks. Can read, write, and format and verify floppy diskettes.
-
-# Other handy retro resources
-
-# Recommended websites and software
-- 86Box - https://86box.net/
-  - My perferred fork of PCem to emulate entire machines.
-- ImgBurn - https://www.imgburn.com/
-  - A versatile image burner
-- Legacy DirectX Versions - http://falconfly.3dfx.pl/directx.htm
-  - A handy website to see what DirectX versions work on what operating systems. 
-- Legacy Update - https://legacyupdate.net/
-  - A must have if updating NT based systems from Windows 2000 and onwards, no more downloading patches from random websites or digging through the Microsft Update Catalog, since it revives the update manager within Windows to access the Windows Update Servers directly.
-- Phils Computer Lab - https://www.philscomputerlab.com/
-  - Has drivers, benchmark software, hardware write-ups.
-- Windows CD Emulator - https://wincdemu.sysprogs.org/download/
-  - A image mounter for systems running XP or later. Comes in a portable version if you don't like installing software.
-- WinWorldPC - https://winworldpc.com/library/operating-systems
-  - A website repository for legacy operating systems and software. 
+- **ImgBurn** - https://www.imgburn.com/
+- **Legacy DirectX Versions** - http://falconfly.3dfx.pl/directx.htm
+- **Legacy Update** - https://legacyupdate.net/
+- **Phils Computer Lab** - https://www.philscomputerlab.com/
+- **Windows CD Emulator** - https://wincdemu.sysprogs.org/download/
+- **WinWorldPC** - https://winworldpc.com/library/operating-systems
+- **Windows Update Restored** - http://windowsupdaterestored.com/
 
 # DOSBox tips: 
 - Mounting directory - ```mount C (path of directory)```
