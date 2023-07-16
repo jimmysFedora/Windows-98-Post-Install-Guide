@@ -105,7 +105,7 @@ My personal list of what I do when installing Windows 98 Second Edition for gami
 - **Windows CD Emulator** - https://wincdemu.sysprogs.org/download/
 - **WinWorldPC** - https://winworldpc.com/library/operating-systems
 - **Windows Update Restored** - http://windowsupdaterestored.com/
-
+https://www.georgebreese.com/net/software/
 # DOSBox tips: 
 - Mounting directory - ```mount C (path of directory)```
 - Mounting CD drive - ```mount (drive letter) (letter of CD-ROM) -t CDROM```
