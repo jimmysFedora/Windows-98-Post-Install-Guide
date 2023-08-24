@@ -52,7 +52,7 @@ My personal list of what I do when installing Windows 98 Second Edition for gami
 - ```copy *.* c:\``` - Common way to copy files. 
 - ```format a: /u``` - Low level format floppy diskettes.
 - ```format c: /q /u /s``` - Use this command if you cannot format drive after using fdisk on it. Go to the CD-ROM, cd into win98 folder, and run the command.
-- Video tutorial to reset HDD to factory settings: https://www.youtube.com/watch?v=rGSjWwTy1Rg
+- Resetting HDD to factory settings: https://www.youtube.com/watch?v=rGSjWwTy1Rg
 
 # Standard Installation Procedures:
 - Boot with Windows 98 Second Edition Boot Disk
@@ -105,7 +105,8 @@ My personal list of what I do when installing Windows 98 Second Edition for gami
 - **Windows CD Emulator** - https://wincdemu.sysprogs.org/download/
 - **WinWorldPC** - https://winworldpc.com/library/operating-systems
 - **Windows Update Restored** - http://windowsupdaterestored.com/
-https://www.georgebreese.com/net/software/http://download.viatech.com/en/support/driversSelect.jsp
+- **VIA Chipset Drivers** - https://www.georgebreese.com/net/software/http://download.viatech.com/en/support/driversSelect.jsp
+
 # DOSBox tips: 
 - Mounting directory - ```mount C (path of directory)```
 - Mounting CD drive - ```mount (drive letter) (letter of CD-ROM) -t CDROM```
