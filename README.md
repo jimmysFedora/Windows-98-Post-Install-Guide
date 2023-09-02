@@ -121,3 +121,6 @@ AUTOFIRE=FALSE
 SWAP34=TRUE
 BUTTONWRAP=FALSE
 ```
+
+# References
+- https://www.vogons.org/viewtopic.php?f=61&t=52119
