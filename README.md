@@ -106,7 +106,7 @@ My personal list of what I do when installing Windows 98 Second Edition for gami
 - **WinWorldPC** - https://winworldpc.com/library/operating-systems
 - **Windows Update Restored** - http://windowsupdaterestored.com/
 - **VIA Chipset Drivers** - https://www.georgebreese.com/net/software/http://download.viatech.com/en/support/driversSelect.jsp
-
+https://www.vogons.org/viewtopic.php?t=63181
 # DOSBox tips: 
 - Mounting directory - ```mount C (path of directory)```
 - Mounting CD drive - ```mount (drive letter) (letter of CD-ROM) -t CDROM```
