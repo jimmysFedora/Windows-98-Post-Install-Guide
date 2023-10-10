@@ -60,7 +60,8 @@ My personal list of what I do when installing Windows 98 Second Edition for gami
 - Make directory on C: drive with “md win98”
 - Go to CD-ROM and ```cd``` into win98 folder
 - Run ```copy *.* C:\win98``` (copies installation files to hard drive directly and Windows won't nag you to insert disk when updating drivers)
-- Go to C drive and run ```setup.exe /p i``` ("/p i" parameters force a APM install instead of ACPI)
+- Go to C drive and run ```setup.exe /p i``` ("/p i" parameter bypasses the reporting the existence of a Plug and Play BIOS during setup).
+- Setup.exe /p j forces Windows to use ACPI/PnP (Useful if having a newer ACPI BIOS not recognized by Windows 98 Machines.inf)
 
 # Post install housekeeping
 - Add or remove Windows features, if not done already during installation process.
@@ -78,9 +79,9 @@ My personal list of what I do when installing Windows 98 Second Edition for gami
   - If you didn't have a Windows password, it should boot into the desktop directly
   
 # Optional but Recommended 9x Updates
-- Windows Security Update CD circa 2004 - https://archive.org/details/SecurityCD_2004
+- **Windows Security Update CD circa 2004** - https://archive.org/details/SecurityCD_2004
   - The most painless and offical way to get your system updated, if you don't want to use unoffical service packs. Microsoft only ever included security patches, Internet Explorer 6, and Windows Media Player 9 within the update CD, so hardware updates are excluded for stability reasons.
-- Windows ME Update CD - https://archive.org/details/wmeupd-r2
+- **Windows ME Update CD** - https://archive.org/details/wmeupd-r2
   - An unoffical package containing all the offical updates ever released for Windows ME. 
 
 # Windows 9x Tips:
@@ -102,11 +103,12 @@ My personal list of what I do when installing Windows 98 Second Edition for gami
 - **Legacy DirectX Versions** - http://falconfly.3dfx.pl/directx.htm
 - **Legacy Update** - https://legacyupdate.net/
 - **Phils Computer Lab** - https://www.philscomputerlab.com/
+- **Sidewinder 3D Pro Drivers** - https://www.vogons.org/viewtopic.php?t=63181
 - **Windows CD Emulator** - https://wincdemu.sysprogs.org/download/
-- **WinWorldPC** - https://winworldpc.com/library/operating-systems
 - **Windows Update Restored** - http://windowsupdaterestored.com/
-- **VIA Chipset Drivers** - https://www.georgebreese.com/net/software/http://download.viatech.com/en/support/driversSelect.jsp
-https://www.vogons.org/viewtopic.php?t=63181
+- **WinWorldPC** - https://winworldpc.com/library/operating-systems
+- **VIA Chipset Drivers** - https://www.georgebreese.com/net/software/http://download.viatech.com/en/support/driversSelect.js-p
+
 # DOSBox tips: 
 - Mounting directory - ```mount C (path of directory)```
 - Mounting CD drive - ```mount (drive letter) (letter of CD-ROM) -t CDROM```
