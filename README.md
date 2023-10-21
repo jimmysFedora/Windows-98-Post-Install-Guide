@@ -124,6 +124,11 @@ SWAP34=TRUE
 BUTTONWRAP=FALSE
 ```
 
+# Windows Keys
+- **Windows 95** - 29696-OEM-0015933-60761
+- **Windows 98 SE** - G2FGT-6HYRW-X2W2C-RT7HW-RF7WX
+- **Windows ME** - TH3RK-MQC86-YX3PH-8DC4R-RKQ72
+
 # References
 - https://www.vogons.org/viewtopic.php?f=61&t=52119
 - https://www.vogons.org/viewtopic.php?p=1034545
