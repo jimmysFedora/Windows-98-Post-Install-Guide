@@ -1,7 +1,5 @@
 # Windows 98 Second Edition Install Guide
-My personal list of what I do when installing Windows 98 Second Edition for gaming and more or less serves as a checklist for my self, please do add any commits if you have any recommendations.
 
-# Hardware tips and requirements:
 - If you are experiencing hardware instabilities such as being unable to run at full CPU clock speed. Install Windows 9x without ACPI by forcing APM mode with ```setup.exe /p i```
 
 - Tweak BIOS settings to your liking before installing Windows.
