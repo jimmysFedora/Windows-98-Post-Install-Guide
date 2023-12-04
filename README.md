@@ -50,7 +50,7 @@
 - ```copy *.* c:\``` - Common way to copy files. 
 - ```format a: /u``` - Low level format floppy diskettes.
 - ```format c: /q /u /s``` - Use this command if you cannot format drive after using fdisk on it. Go to the CD-ROM, cd into win98 folder, and run the command.
-- Resetting HDD to factory settings: https://www.youtube.com/watch?v=rGSjWwTy1Rg
+- Resetting HDD to factory settings: [https://www.youtube.com/watch?v=rGSjWwTy1Rg](https://www.youtube.com/watch?v=rGSjWwTy1Rg)
 
 # Standard Installation Procedures:
 - Boot with Windows 98 Second Edition Boot Disk
@@ -59,7 +59,7 @@
 - Go to CD-ROM and ```cd``` into win98 folder
 - Run ```copy *.* C:\win98``` (copies installation files to hard drive directly and Windows won't nag you to insert disk when updating drivers)
 - Go to C drive and run ```setup.exe /p i``` ("/p i" parameter bypasses the reporting the existence of a Plug and Play BIOS during setup).
-- Setup.exe /p j forces Windows to use ACPI/PnP (Useful if having a newer ACPI BIOS not recognized by Windows 98 Machines.inf)
+- Running setup.exe /p j forces Windows to use ACPI/PnP (Useful if having a newer ACPI BIOS not recognized)
 
 # Post install housekeeping
 - Add or remove Windows features, if not done already during installation process.
