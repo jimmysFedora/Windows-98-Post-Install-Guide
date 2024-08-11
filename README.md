@@ -87,7 +87,7 @@
 - If burning disks make sure burn speed is slow like 10X and verifying the content is burnt in ISO 9660 file system.
 - Installing the DirectX version your graphics card supports is recommended, but you may want to stick to installing DirectX 7.0a for more period correct games.
 - If dual booting XP and using EZ-Drive make sure FAT32 partition for 98 is smaller than the NTFS partition for XP.
-
+https://www.reddit.com/r/windows98/comments/1d26gr7/here_is_a_actual_network_sharing_fix_for_windows/
 # Recommended Software & Websites
 - **3DMark** - https://www.philscomputerlab.com/futuremark-3dmark.html
 - **86Box** - https://86box.net/
@@ -97,6 +97,7 @@
 - **Norton Ghost 2003** - https://archive.org/details/norton_ghost_2003/
 - **Windows Installer 2.0** - https://archive.org/details/instmsi   
 - **WinImage** - https://winworldpc.com/product/winimage/61
+- **Windows 98 SE Update CD** - https://archive.org/details/w98se-upd-r1
 - **ImgBurn** - https://www.imgburn.com/
 - **Legacy DirectX Versions** - http://falconfly.3dfx.pl/directx.htm
 - **Legacy Update** - https://legacyupdate.net/
