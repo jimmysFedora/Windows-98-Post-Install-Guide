@@ -103,7 +103,7 @@ https://www.reddit.com/r/windows98/comments/1d26gr7/here_is_a_actual_network_sha
 - **Norton Ghost 2003** - https://archive.org/details/norton_ghost_2003/
 - **Phils Computer Lab** - https://www.philscomputerlab.com/
 - **Sidewinder 3D Pro Drivers** - https://www.vogons.org/viewtopic.php?t=63181
-- **VIA Chipset Drivers** - https://www.georgebreese.com/net/software/http://download.viatech.com/en/support/driversSelect.js-p
+- **VIA Chipset Drivers** - https://www.georgebreese.com/net/software/
 - **Windows CD Emulator** - https://wincdemu.sysprogs.org/download/
 - **Windows Installer 2.0** - https://archive.org/details/instmsi   
 - **Windows Update Restored** - http://windowsupdaterestored.com/
