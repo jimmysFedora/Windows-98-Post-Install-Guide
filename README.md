@@ -11,7 +11,7 @@
 - Keep partition size under what OS and hardware can support.
   - It is recommended to have a 32GB partition but Windows 95 OSR 2.5, 98 & ME supports up to 137GB partitions natively.
 
-- Instead of configuring boot loader for dual booting have operating systems on their own seperate drive and boot into them by marking unused drives to not installed.
+- Instead of configuring boot loader for dual booting, have operating systems on their own seperate drive. Then boot into them by marking unused drives to not installed.
   - BIOS → IDE HDD AUTO-DETECTION → UNUSED DRIVES → NOT INSTALLED
 
 # Recommended BIOS Settings:
@@ -21,19 +21,19 @@
 - ADJUST TIME
 - BOOT ORDER - AS NECESSARY
 - USB KB/MOUSE LEGACY - KEYB + MOUSE (IF USING ONE)
-- PNP AWARE OS - ON
+- PnP AWARE OS - ON
 - PRIMARY GRAPHICS ADAPTER - AGP (IF RUNNING AGP VIDEO CARD)
 - COMPLIANCE WITH O/S - NO (FORCE APM INSTALL)
-- UNUSED PORTS (SERIAL, PARALLEL, ETHERNET, etc) - DISABLED
-- ONBOARD AC’97, LEGACY AUDIO & SOUND BLASTER - DISABLED (IF YOU HAVE ANOTHER SOUND CARD YOU'RE USING)
+- UNUSED PORTS (SERIAL, PARALLEL, etc) - DISABLED
+- ONBOARD AC’97, LEGACY AUDIO & SOUND BLASTER - DISABLED
 - FSB SPEED - (ADJUST AS NECESSARY) - FOR ME I HAVE A PENTIUM III 1000MHZ AND IT RUNS GREAT AT A FSB OF 133MHZ.
-- VOLTAGE - (ADJUST AS NECESSARY) - FOR ME IT IS 1.7V WHICH IS THE LOWEST I CAN GO AND I HAVE NO ISSUES.
-- IDE HDD AUTO DETECTION - PRESSED (TO REFRESH DRIVES)
+- VOLTAGE - (ADJUST AS NECESSARY FOR PROCESSOR)
+- IDE HDD AUTO DETECTION - SELECT (TO REFRESH DRIVES)
 ```
 
 # Pre-Installation Procedures:
 - Make sure hard drive isn't slave to CD-ROM
-- I use [SeaTools](https://www.seagate.com/support/downloads/seatools/seatools-legacy-support/) and [WD Data Lifeguard Tools](https://www.philscomputerlab.com/western-digital.html) to format the partitions instead of using ```fdisk``` for quicker formats. By not using ```fdisk```, you don't get sector checks like you would when creating and formating partitions in fdisk.
+- I use [SeaTools](https://www.seagate.com/support/downloads/seatools/seatools-legacy-support/) and [WD Data Lifeguard Tools](https://www.philscomputerlab.com/western-digital.html) to format the partitions instead of using ```fdisk``` for quicker formats. By not using ```fdisk```,you don't get sector checks like you would when creating and formating partitions in fdisk.
 - If installing on a Seagate hard drive
   - Use SeaTools to reset disk size or cap partition to 32GB.
   - Then use [Seagate DiscWizard Starter Edition](https://www.philscomputerlab.com/seagate.html) to configure the rest of the drive.
@@ -64,10 +64,8 @@
 # Post install housekeeping
 - Add or remove Windows features, if not done already during installation process.
 
-- Verify DMA Mode is turned on for HDD & CD-ROM in Device Manager
+- Verify DMA Mode is turned on for Storage & CD-ROM in Device Manager
   - If unstable disable DMA mode  
-
-- Configure sound mixer settings
 
 - Set sound output for devices in multimedia to have the highest sample rate conversion quality
 
@@ -76,9 +74,12 @@
 - Remove network login prompt by going to ```Settings → Network → Primary Network Logon → Windows Logon```
   - If you didn't have a Windows password, it should boot into the desktop directly
   
-# Optional but Recommended 9x Updates
+# Optional 9x Updates
+- **Windows 98 SE Update CD** - https://archive.org/details/w98se-upd-r1
+
 - **Windows Security Update CD circa 2004** - https://archive.org/details/SecurityCD_2004
   - The most painless and offical way to get your system updated, if you don't want to use unoffical service packs. Microsoft only ever included security patches, Internet Explorer 6, and Windows Media Player 9 within the update CD, so hardware updates are excluded for stability reasons.
+
 - **Windows ME Update CD** - https://archive.org/details/wmeupd-r2
   - An unoffical package containing all the offical updates ever released for Windows ME. 
 
@@ -88,26 +89,26 @@
 - Installing the DirectX version your graphics card supports is recommended, but you may want to stick to installing DirectX 7.0a for more period correct games.
 - If dual booting XP and using EZ-Drive make sure FAT32 partition for 98 is smaller than the NTFS partition for XP.
 https://www.reddit.com/r/windows98/comments/1d26gr7/here_is_a_actual_network_sharing_fix_for_windows/
+
 # Recommended Software & Websites
 - **3DMark** - https://www.philscomputerlab.com/futuremark-3dmark.html
 - **86Box** - https://86box.net/
 - **DAMEON Tools** - https://www.philscomputerlab.com/daemon-tools-windows-98.html
 - **Diskeeper 6.0** - https://winworldpc.com/product/diskeeper/60
-- **Microsoft Plus!** - https://winworldpc.com/product/plus/1998
-- **Norton Ghost 2003** - https://archive.org/details/norton_ghost_2003/
-- **Windows Installer 2.0** - https://archive.org/details/instmsi   
-- **WinImage** - https://winworldpc.com/product/winimage/61
-- **Windows 98 SE Update CD** - https://archive.org/details/w98se-upd-r1
 - **ImgBurn** - https://www.imgburn.com/
 - **Legacy DirectX Versions** - http://falconfly.3dfx.pl/directx.htm
 - **Legacy Update** - https://legacyupdate.net/
 - **MemTest86** - https://www.memtest86.com/index.html
+- **Microsoft Plus!** - https://winworldpc.com/product/plus/1998
+- **Norton Ghost 2003** - https://archive.org/details/norton_ghost_2003/
 - **Phils Computer Lab** - https://www.philscomputerlab.com/
 - **Sidewinder 3D Pro Drivers** - https://www.vogons.org/viewtopic.php?t=63181
-- **Windows CD Emulator** - https://wincdemu.sysprogs.org/download/
-- **Windows Update Restored** - http://windowsupdaterestored.com/
-- **WinWorldPC** - https://winworldpc.com/library/operating-systems
 - **VIA Chipset Drivers** - https://www.georgebreese.com/net/software/http://download.viatech.com/en/support/driversSelect.js-p
+- **Windows CD Emulator** - https://wincdemu.sysprogs.org/download/
+- **Windows Installer 2.0** - https://archive.org/details/instmsi   
+- **Windows Update Restored** - http://windowsupdaterestored.com/
+- **WinImage** - https://winworldpc.com/product/winimage/61
+- **WinWorldPC** - https://winworldpc.com/library/operating-systems
 
 # DOSBox tips: 
 - Mounting directory - ```mount C (path of directory)```
