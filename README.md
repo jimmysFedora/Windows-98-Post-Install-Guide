@@ -13,7 +13,14 @@
 
 - Instead of configuring boot loader for dual booting, have operating systems on their own seperate drive. Then boot into them by marking unused drives to not installed.
   - BIOS → IDE HDD AUTO-DETECTION → UNUSED DRIVES → NOT INSTALLED
+VXD DRIVERS WILL PERFORM BETTER IN DOS GAMES AND YOU CAN REBOOT INTO MS-DOS WITH VXD DRIVERS
 
+WDM DRIVERS WORK ONLY ON DOS GAMES RUNNING ON WINDOWS BUT ALSO WORK WITH WINDOWS GAMES SUCH AS USNF 97 AND FIGHTERS ANTHOLOGY 
+BUT YOU WON'T BE ABLE TO REBOOT INTO MS-DOS WITH WORKING SOUND VIA WDM DRIVERS
+
+WDM DRIVERS PERFORM WORSE THAN VXD BUT PROVIDES MORE COMPATIABLITY WITH WINDOWS AND DOS GAMES.
+
+CHOOSE WDM DRIVER FOR COMPATIBILITY WITH GAMES
 # Recommended BIOS Settings:
 ```
 - LOAD SETUP DEFAULTS - LOADS PERFORMANCE SETTINGS
@@ -77,9 +84,6 @@
 # Optional 9x Updates
 - **Windows 98 SE Update CD** - https://archive.org/details/w98se-upd-r1
 
-- **Windows Security Update CD circa 2004** - https://archive.org/details/SecurityCD_2004
-  - The most painless and offical way to get your system updated, if you don't want to use unoffical service packs. Microsoft only ever included security patches, Internet Explorer 6, and Windows Media Player 9 within the update CD, so hardware updates are excluded for stability reasons.
-
 - **Windows ME Update CD** - https://archive.org/details/wmeupd-r2
   - An unoffical package containing all the offical updates ever released for Windows ME. 
 
@@ -88,7 +92,7 @@
 - If burning disks make sure burn speed is slow like 10X and verifying the content is burnt in ISO 9660 file system.
 - Installing the DirectX version your graphics card supports is recommended, but you may want to stick to installing DirectX 7.0a for more period correct games.
 - If dual booting XP and using EZ-Drive make sure FAT32 partition for 98 is smaller than the NTFS partition for XP.
-https://www.reddit.com/r/windows98/comments/1d26gr7/here_is_a_actual_network_sharing_fix_for_windows/
+- https://www.reddit.com/r/windows98/comments/1d26gr7/here_is_a_actual_network_sharing_fix_for_windows/
 
 # Recommended Software & Websites
 - **3DMark** - https://www.philscomputerlab.com/futuremark-3dmark.html
@@ -109,6 +113,7 @@ https://www.reddit.com/r/windows98/comments/1d26gr7/here_is_a_actual_network_sha
 - **Windows Update Restored** - http://windowsupdaterestored.com/
 - **WinImage** - https://winworldpc.com/product/winimage/61
 - **WinWorldPC** - https://winworldpc.com/library/operating-systems
+- **Audigy 2 ZS** - https://www.vogons.org/viewtopic.php?f=62&t=71449
 
 # DOSBox tips: 
 - Mounting directory - ```mount C (path of directory)```
