@@ -13,12 +13,8 @@
 
 - Instead of configuring boot loader for dual booting, have operating systems on their own seperate drive. Then boot into them by marking unused drives to not installed.
   - BIOS → IDE HDD AUTO-DETECTION → UNUSED DRIVES → NOT INSTALLED
-VXD DRIVERS WILL PERFORM BETTER IN DOS GAMES AND YOU CAN REBOOT INTO MS-DOS WITH VXD DRIVERS
 
-WDM DRIVERS WORK ONLY ON DOS GAMES RUNNING ON WINDOWS BUT ALSO WORK WITH WINDOWS GAMES SUCH AS USNF 97 AND FIGHTERS ANTHOLOGY 
-BUT YOU WON'T BE ABLE TO REBOOT INTO MS-DOS WITH WORKING SOUND VIA WDM DRIVERS
-
-WDM DRIVERS PERFORM WORSE THAN VXD BUT PROVIDES MORE COMPATIABLITY WITH WINDOWS AND DOS GAMES.
+- Note on audio drivers, VXD DRIVERS WILL PERFORM BETTER IN DOS GAMES AND YOU CAN REBOOT INTO MS-DOS WITH VXD DRIVERS WDM DRIVERS WORK ONLY ON DOS GAMES RUNNING ON WINDOWS BUT ALSO WORK WITH WINDOWS GAMES SUCH AS USNF 97 AND FIGHTERS ANTHOLOGY BUT YOU WON'T BE ABLE TO REBOOT INTO MS-DOS WITH WORKING SOUND VIA WDM DRIVERS. WDM DRIVERS PERFORM WORSE THAN VXD BUT PROVIDES MORE COMPATIABLITY WITH WINDOWS AND DOS GAMES.
 
 CHOOSE WDM DRIVER FOR COMPATIBILITY WITH GAMES
 # Recommended BIOS Settings:
@@ -97,6 +93,7 @@ CHOOSE WDM DRIVER FOR COMPATIBILITY WITH GAMES
 # Recommended Software & Websites
 - **3DMark** - https://www.philscomputerlab.com/futuremark-3dmark.html
 - **86Box** - https://86box.net/
+- **Audigy 2 ZS** - https://www.vogons.org/viewtopic.php?f=62&t=71449
 - **DAMEON Tools** - https://www.philscomputerlab.com/daemon-tools-windows-98.html
 - **Diskeeper 6.0** - https://winworldpc.com/product/diskeeper/60
 - **ImgBurn** - https://www.imgburn.com/
@@ -113,7 +110,6 @@ CHOOSE WDM DRIVER FOR COMPATIBILITY WITH GAMES
 - **Windows Update Restored** - http://windowsupdaterestored.com/
 - **WinImage** - https://winworldpc.com/product/winimage/61
 - **WinWorldPC** - https://winworldpc.com/library/operating-systems
-- **Audigy 2 ZS** - https://www.vogons.org/viewtopic.php?f=62&t=71449
 
 # DOSBox tips: 
 - Mounting directory - ```mount C (path of directory)```
