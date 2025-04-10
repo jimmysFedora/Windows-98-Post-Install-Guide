@@ -117,15 +117,6 @@ CHOOSE WDM DRIVER FOR COMPATIBILITY WITH GAMES
 - Mounting ISO - ```imgmount “drive letter” “path to iso.iso” -t iso```
 - Mounting CUE/BIN files - ```imgmount (drive letter) (path to cue.cue) -t iso```
 
-To use joystick in DOSBox configure the config file in the install by changing ```JOYSTICK=AUTO``` to ```JOYSTICK=CH```, and ```SWAP34=TRUE``` then set the joystick in the game to ```CH JOYSTICK```then calibrate.
-```
-JOYSTICKTYPE=CH
-TIMED=TRUE
-AUTOFIRE=FALSE
-SWAP34=TRUE
-BUTTONWRAP=FALSE
-```
-
 # Windows Keys
 - **Windows 95** - 29696-OEM-0015933-60761
 - **Windows 98 SE** - G2FGT-6HYRW-X2W2C-RT7HW-RF7WX
