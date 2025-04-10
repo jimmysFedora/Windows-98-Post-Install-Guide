@@ -111,12 +111,6 @@ CHOOSE WDM DRIVER FOR COMPATIBILITY WITH GAMES
 - **WinImage** - https://winworldpc.com/product/winimage/61
 - **WinWorldPC** - https://winworldpc.com/library/operating-systems
 
-# DOSBox tips: 
-- Mounting directory - ```mount C (path of directory)```
-- Mounting CD drive - ```mount (drive letter) (letter of CD-ROM) -t CDROM```
-- Mounting ISO - ```imgmount “drive letter” “path to iso.iso” -t iso```
-- Mounting CUE/BIN files - ```imgmount (drive letter) (path to cue.cue) -t iso```
-
 # Windows Keys
 - **Windows 95** - 29696-OEM-0015933-60761
 - **Windows 98 SE** - G2FGT-6HYRW-X2W2C-RT7HW-RF7WX
